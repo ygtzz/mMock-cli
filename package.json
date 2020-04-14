@@ -1,5 +1,5 @@
 {
-  "name": "mmock",
+  "name": "mmock-cli",
   "version": "0.0.2",
   "description": "a mock server",
   "main": "index.js",
