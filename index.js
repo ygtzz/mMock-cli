@@ -9,6 +9,7 @@ const mock = require('./middleware/mock');
 const _ = require('lodash');
 const pkg = require('./package.json');
 const argv = yargs.version(false).help(false).argv;
+const open = require('open');
 
 if(argv.v || argv.version){
     console.log(`version: ${pkg.version}`)
@@ -46,7 +47,9 @@ else{
     app.use(mock());
 
     app.listen(cfg.port,'0.0.0.0',() => {
-        console.log(`mMock server listening ${cfg.domain}:${cfg.port}`)
+        let url = `${cfg.domain}:${cfg.port}`;
+        console.log(`mMock server listening ${url}`);
+	    open(url);
     })
 }
 
