@@ -14,7 +14,9 @@
   },
   "keywords": [
     "mock",
-    "server"
+    "server",
+    "mockjs",
+    "faker"
   ],
   "repository": {
     "type": "git",
