@@ -1,6 +1,6 @@
 {
   "name": "mmock-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "mock server, supports mockjs and faker.js",
   "main": "index.js",
   "bin": {
@@ -16,6 +16,10 @@
     "mock",
     "server"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ygtzz/mMock-cli.git"
+  },
   "author": "ygtzz",
   "license": "ISC",
   "dependencies": {
