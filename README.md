@@ -9,6 +9,18 @@ npm i -g mmock-cli
 $ mmock //start the mock server
 ```
 
+## Options
+
+```bash
+-h  --help      show help
+-v  --version   show version
+-d  --domain    set mock server url domain
+-p  --port      set mock server url port
+    --db        set mock server db json file path
+
+mock -p 8886 -d http://mock.com
+```
+
 ## Grammar
 
 support [mockjs](http://mockjs.com/examples.html "mockjs") and [faker.js](https://github.com/marak/Faker.js/ "faker"), you can use it alone, or mix them
