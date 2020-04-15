@@ -1,5 +1,5 @@
 # mMock-cli
-cli tool to mock server
+cli tool to mock data, supports mockjs and faker.js
 
 ## Usage
 
@@ -11,7 +11,7 @@ $ mmock //start the mock server
 
 ## Grammar
 
-support [mockjs](http://mockjs.com/examples.html "mockjs") and [faker.js](https://github.com/marak/Faker.js/ "faker"), you can use it alone, or mix them;
+support [mockjs](http://mockjs.com/examples.html "mockjs") and [faker.js](https://github.com/marak/Faker.js/ "faker"), you can use it alone, or mix them
 
 example:
 
