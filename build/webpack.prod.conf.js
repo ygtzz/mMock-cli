@@ -4,7 +4,7 @@ var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 var merge = require('webpack-merge');
 var WebpackChunkHash = require('webpack-chunk-hash');
 var MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var baseWebapckConfig = require('./webpack.base.conf');
 var config = require('./config');
 
@@ -23,7 +23,7 @@ var aPlugin = [
     new LodashModuleReplacementPlugin(),
     new webpack.HashedModuleIdsPlugin(),    
     new WebpackChunkHash(),
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin()
 ];
 
 //html webpack

@@ -2,6 +2,7 @@
 	<div class="home">
 		<div class="optc">
 			<button class="btn btn-primary" @click="onAdd">添加</button>
+            <a class="doc-link" href='https://github.com/ygtzz/mMock-cli' target="_blank">使用文档</a>
 		</div>
         <div class="tbc">
             <table class="tb tb-api">
@@ -40,6 +41,8 @@
         margin: 0 auto;
         .optc{
             margin-top: 10px;
+            overflow: hidden;
+            padding-right: 3px;
         }
         .tbc{
             margin-top: 10px;
@@ -58,6 +61,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+        .doc-link{
+            float: right;
+            line-height: 30px;
         }
     }
 </style>
