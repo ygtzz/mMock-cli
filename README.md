@@ -23,7 +23,8 @@ mock -p 8886 -d http://mock.com
 
 ## Grammar
 
-support [mockjs](http://mockjs.com/examples.html "mockjs") and [faker.js](https://github.com/marak/Faker.js/ "faker"), you can use it alone, or mix them
+support [mockjs](http://mockjs.com/examples.html "mockjs") and [faker.js](https://github.com/marak/Faker.js/ "faker"), you can use it alone, or mix them.
+support url path param, such as `/:area/user/:id`, yon can use @param(area), @param(id) to get path param.
 
 example:
 
@@ -36,7 +37,8 @@ example:
         "sex|1":["男","女"],    //性别是数组中的一个，随机的
         "job|1": ["js","css","node.js","vue"],   //工作是数组中的一个
         "email": "{{internet.email}}",  //email
-        "website": "{{internet.url}}"   //url
+        "website": "{{internet.url}}",   //url
+        "area": "@param(area)" //get area param
     }]
 }
 ```
