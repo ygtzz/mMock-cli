@@ -34,7 +34,7 @@ example:
         "name": "@cname",    //名字为随机中文名字
         "ago|18-31": 25,    //年龄为18-28之间的随机数字
         "sex|1":["男","女"],    //性别是数组中的一个，随机的
-        "job|1": ["js","css","node.js","vue"]    //工作是数组中的一个
+        "job|1": ["js","css","node.js","vue"],   //工作是数组中的一个
         "email": "{{internet.email}}",  //email
         "website": "{{internet.url}}"   //url
     }]
