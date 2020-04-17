@@ -1,4 +1,4 @@
-# mMock-cli
+# mmock-cli
 cli tool to mock data, supports mockjs and faker.js
 
 ## Usage
