@@ -8,6 +8,7 @@ const bodyParser = require('koa-bodyparser')
 const db = require('./middleware/db');
 const router = require('./middleware/router');
 const mock = require('./middleware/mock');
+const cors = require('./middleware/cors');
 const _ = require('lodash');
 const pkg = require('./package.json');
 const argv = yargs.version(false).help(false).argv;
@@ -26,18 +27,21 @@ else if(argv.h || argv.help){
     -d  --domain    set mock server url domain
     -p  --port      set mock server url port
         --db        set mock server db json file path
+        --cors      1 is on, 0 is off, default is on
     `);
 }
 else{
     const defaultOpts = {
         port: 8888,
         domain: 'http://localhost',
-        db: 'mock.json'
+        db: 'mock.json',
+        cors: true
     }
     const cfg = _.merge({},defaultOpts,{
         port: argv.port || argv.p,
         domain: argv.domain || argv.d,
-        db: argv.db
+        db: argv.db,
+        cors: typeof argv.cors === 'undefined' ? true : Boolean(argv.cors)
     })
 
     const app = new koa();
@@ -46,6 +50,7 @@ else{
     app.use(static(__dirname + '/static'));
     app.use(db(cfg.db));
     app.use(router.routes()).use(router.allowedMethods());
+    cfg.cors && app.use(cors());
     app.use(mock());
 
     app.listen(cfg.port,'0.0.0.0',() => {
