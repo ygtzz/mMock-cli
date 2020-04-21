@@ -1,8 +1,12 @@
 <template>
 	<div class="home">
 		<div class="optc">
-			<button class="btn btn-primary" @click="onAdd">添加</button>
-            <a class="doc-link" href='https://github.com/ygtzz/mMock-cli' target="_blank">使用文档</a>
+            <span class="opt-l">
+                <a class="doc-link" href='https://github.com/ygtzz/mMock-cli' target="_blank">使用文档</a>
+            </span>
+            <span class="opt-r">
+			    <button class="btn btn-primary" @click="onAdd">添加</button>
+            </span>
 		</div>
         <div class="tbc">
             <table class="tb tb-api">
@@ -44,6 +48,9 @@
             overflow: hidden;
             padding-right: 3px;
         }
+        .opt-r{
+            float: right;
+        }
         .tbc{
             margin-top: 10px;
         }
@@ -63,7 +70,6 @@
             white-space: nowrap;
         }
         .doc-link{
-            float: right;
             line-height: 30px;
         }
     }
