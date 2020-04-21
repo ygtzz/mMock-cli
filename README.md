@@ -17,6 +17,7 @@ $ mmock //start the mock server
 -d  --domain    set mock server url domain
 -p  --port      set mock server url port
     --db        set mock server db json file path
+    --cors      1 is on, 0 is off, default is on, supports cors to cross domain
 
 mock -p 8886 -d http://mock.com
 ```
