@@ -6,7 +6,20 @@ const _  = require('lodash');
 const defaults = {
 	apis: {
 		"get|/example": {
-			"name": "@name"
+			"status": "200",
+			"msg": "OK",
+			"data|10": [
+				{
+					"name": "@name",
+					"plan_date": "@date('yyyy-MM-dd')",
+					"cwname": "@string",
+					"productspecification": "@string",
+					"plan_qty": "@integer(1,1000)",
+					"plan_made": "@integer(1,1000)",
+					"comp_qty": "@integer(1,1000)",
+					"plan_comp_per": "@float(0,0,0,3)"
+				}
+			]
 		}
 	}
 }
