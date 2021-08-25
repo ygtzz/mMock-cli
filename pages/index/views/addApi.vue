@@ -133,6 +133,14 @@ export default {
                 url,
                 content: this.filterContent(content)
             }
+            if(!url){
+                this.$toast('please input api url');
+                return;
+            }
+            if(!content){
+                this.$toast('please input api content');
+                return;
+            }
             
             try{
                 this.$loading(true);
