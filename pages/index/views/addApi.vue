@@ -114,13 +114,15 @@ export default {
         filterContent(code){    
             try{
                 //过滤注释
-                code = code.replace(/\/\/.*/g, '\n').replace(/\*.*?\*/g, '\n');
-                code = JSON.parse(code);
+                // code = code.replace(/\/\/.*/g, '\n').replace(/\*.*?\*/g, '\n');
+                // code = JSON.parse(code);
+                //支持非标准的json格式，书写更自由
+                code = eval('json='+code);
                 code = JSON.stringify(code);
             }
             catch(e){
                 this.$toast('please input json format');
-                throw e;
+                // throw e;
             }
             return code;
         },
