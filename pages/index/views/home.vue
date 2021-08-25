@@ -34,7 +34,7 @@
                 </tbody>
             </table>
         </div>
-        <modal name="addApi" width="1000" height="600" :clickToClose="false">
+        <modal name="addApi" width="1000" height="680" :clickToClose="false">
             <addApi :curApi="curApi" @close="onAddApiModalClose" />
         </modal>
 	</div>

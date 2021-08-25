@@ -50,7 +50,7 @@
             height: 500px;
             padding-bottom: 20px;
             .CodeMirror {
-                height: 450px !important;
+                height: 480px !important;
             }
             .CodeMirror-vscrollbar::-webkit-scrollbar {
                 width: 8px;
@@ -70,7 +70,7 @@
             line-height: 1.5;
         }
         .btnc{
-            margin-top: 30px;
+            margin-top: 10px;
             text-align: right;
         }
         .btn-close{
