@@ -31,20 +31,39 @@
         }
         .opc{
             margin-top: 20px;
-        }
-        .input-url{
-            width: 664px;
-            vertical-align: middle;
+            display: flex;
         }
         .sel-method{
             width: 100px;
             display: inline-block;
             vertical-align: middle;
+            border-radius: 3px;
+        }
+        .input-url{
+            flex: 1;
+            vertical-align: middle;
+            padding-left: 10px;
+            margin-left: 5px;
         }
         .codec{
             margin-top: 20px;
-            height: 300px;
+            height: 500px;
             padding-bottom: 20px;
+            .CodeMirror {
+                height: 450px !important;
+            }
+            .CodeMirror-vscrollbar::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+            .CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+                background-color: #999;
+                border-radius: 2em;
+            }
+            .CodeMirror-vscrollbar::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0);
+                border-radius: 2em;
+            }
         }
         .code-mirror{
             font-size: 14px;

@@ -7,9 +7,9 @@
     "mmock": "./index.js"
   },
   "scripts": {
-    "dev": "nodemon inde.js",
-    "dev:client": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.conf.js",
-    "build:client": "cross-env NODE_ENV=production gulp",
+    "devs": "nodemon inde.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.conf.js",
+    "build": "cross-env NODE_ENV=production gulp",
     "test": "test"
   },
   "keywords": [

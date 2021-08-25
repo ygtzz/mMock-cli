@@ -34,7 +34,7 @@
                 </tbody>
             </table>
         </div>
-        <modal name="addApi" width="800" height="480" :clickToClose="false">
+        <modal name="addApi" width="1000" height="600" :clickToClose="false">
             <addApi :curApi="curApi" @close="onAddApiModalClose" />
         </modal>
 	</div>
@@ -55,7 +55,7 @@
             margin-top: 10px;
         }
         .tb-api{
-            width: 800px;
+            width: 90vw;
         }
         .btn-test{
             margin-right: 5px;
@@ -64,7 +64,7 @@
             margin-right: 5px;
         }
         .col-content{
-            width: 400px;
+            width: 40vw;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;

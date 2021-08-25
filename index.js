@@ -14,6 +14,11 @@ const pkg = require('./package.json');
 const argv = yargs.version(false).help(false).argv;
 const open = require('open');
 
+//TODO
+//1. 编辑后格式丢失
+//2. 非标准的json，可以识别，并自动格式化为json
+//3. 表格按钮放大1.2倍
+
 if(argv.v || argv.version){
     console.log(`version: ${pkg.version}`)
 }
