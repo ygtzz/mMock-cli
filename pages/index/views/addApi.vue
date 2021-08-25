@@ -117,7 +117,7 @@ export default {
                 // code = code.replace(/\/\/.*/g, '\n').replace(/\*.*?\*/g, '\n');
                 // code = JSON.parse(code);
                 //支持非标准的json格式，书写更自由
-                code = eval('json='+code);
+                eval('code='+code);
                 code = JSON.stringify(code);
             }
             catch(e){
