@@ -7,7 +7,8 @@
     "mmock": "./index.js"
   },
   "scripts": {
-    "devs": "nodemon inde.js",
+    "devs": "nodemon index.js",
+    "dev-server": "node index.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.conf.js",
     "build": "cross-env NODE_ENV=production gulp",
     "test": "test"
